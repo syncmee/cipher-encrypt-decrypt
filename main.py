@@ -42,10 +42,12 @@ should_end = False
 while not should_end:
     restart = input(
         "Type 'yes' if you want to go again. Otherwise type 'no'.\n")
+
     if restart == "no":
         should_end = True
         print("Thanks For Using Cipher")
-
-    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-    text = input("Type your message:\n").lower()
-    shift = int(input("Type the shift number:\n"))
+    else:
+        direction = input(
+            "Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+        text = input("Type your message:\n").lower()
+        shift = int(input("Type the shift number:\n"))
